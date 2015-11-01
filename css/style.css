@@ -1,0 +1,205 @@
+html, body, div, span, p,
+a, img, strong, center, ul, li, form, label,
+aside, footer, header,
+toolbar, logo, content, cart, textline, register, login{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline:none;
+}
+
+body {
+	width: 1200px;
+	font-family: sans-serif;
+}
+	
+#wrapper {
+	margin:0 auto;
+	background: lighter;
+	position: absolute;
+	top: -10px;
+	width: 100%;
+}
+
+#toolbar {
+	padding-left: 50px;
+}
+
+#toolbar ul li{
+	list-style-type: none;
+	float: left;
+	padding: 15px;
+	padding-top: 25px;
+}
+
+#toolbar ul li {
+    transform: translateZ(0);
+}
+#toolbar ul li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ED0019;
+    transform: scaleY(0);
+    transform-origin: 50% 95%;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+#toolbar ul li:hover:before, #toolbar ul li:focus:before, #toolbar ul li:active:before {
+    transform: scaleY(1);
+}
+#toolbar ul li:first-child{
+    margin-left: 28px;
+}
+
+#logo{
+	padding-left: 90px;
+	background: red;
+	height: 75px;
+	clear: both;
+}
+
+#logo h1 {
+	color: white;
+	font-size: 60px;
+	display: inline;
+}
+
+#logo input {
+	margin-left: 150px;
+	height: 35px;
+	width: 300px;
+	border: 1px;
+}
+
+#welcomeText {
+	display: inline;
+	position: absolute;
+	top: 14%;
+	left: 65%;
+	color:white;
+	font-size:16px;
+}
+
+#logo #cart {
+	display: inline;
+	position: absolute;
+	top: 15%;
+	left: 77%;
+	transform:scale(3,3);
+}
+
+#logo #cartNum {
+	display: inline;
+	position: absolute;
+	top: 14%;
+	left: 77.5%;
+	color:white;
+}
+#content {
+	height: 330px;
+	background: #EDEDED;
+	font-size: 12px;
+}
+
+#textline { 
+	float: left;
+	width: 860px;
+	background: white;
+	margin-left: 90px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding:7px;
+}
+
+#content #textline h2 {
+	display: inline;
+	font-weight: normal;
+}
+
+.redtitle {
+	color: red;
+	font-size: 12px;
+	
+}
+
+#register {
+	float: left;
+	width: 400px;
+	background: white;
+	margin-left: 90px;
+	padding:15px;
+}
+
+#userPlus {
+	transform:scale(10,10);
+	float:right;
+	padding-top:10px;
+	padding-right:10px;
+    opacity: 0.1;
+}
+
+#lock {
+	transform:scale(13,13);
+	float:right;
+	padding-top:10px;
+	padding-right:15px;
+    opacity: 0.1;
+}
+
+#login {
+	float: left;
+	width: 400px;
+	background: white;
+	margin-left: 15px;
+	padding:15px;
+}
+
+#login input {
+	background-color: white;
+	
+}
+
+button.submitForm {
+	background:black;
+	color:white;
+	padding:10px;
+	border: 1px;
+}
+
+#footer {
+	background: black;
+	height:130px;
+}
+
+.container-1 input#search{
+  position: absolute;
+  top: 12%;
+  left: 15%;
+  background: #FFF;
+  border: none;
+  font-size: 10pt;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-1 .icon{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
