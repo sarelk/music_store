@@ -25,7 +25,7 @@ body {
 }
 
 #toolbar {
-	padding-left: 50px;
+	padding-left: 110px;
 }
 
 #toolbar ul li{
@@ -61,11 +61,12 @@ body {
 }
 
 #logo{
-	padding-left: 90px;
+	padding-left: 150px;
 	background: red;
 	height: 75px;
 	clear: both;
 }
+
 
 #logo h1 {
 	color: white;
@@ -74,7 +75,7 @@ body {
 }
 
 #logo input {
-	margin-left: 150px;
+	margin-left: 200px;
 	height: 35px;
 	width: 300px;
 	border: 1px;
@@ -83,27 +84,52 @@ body {
 #welcomeText {
 	display: inline;
 	position: absolute;
-	top: 14%;
-	left: 65%;
+	top: 80px;
+	left: 815px;
 	color:white;
-	font-size:16px;
+	font-size:15px;
 }
 
 #logo #cart {
 	display: inline;
 	position: absolute;
-	top: 15%;
-	left: 77%;
+	top: 87px;
+	left: 940px;
 	transform:scale(3,3);
 }
 
 #logo #cartNum {
 	display: inline;
 	position: absolute;
-	top: 14%;
-	left: 77.5%;
+	top: 81px;
+	left: 945px;
 	color:white;
 }
+
+.container-1 input#search{
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  background: #FFF;
+  border: none;
+  font-size: 10pt;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-1 .icon{
+  position: absolute;
+  top: 70px;
+  left: 650px;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
 #content {
 	height: 330px;
 	background: #EDEDED;
@@ -112,9 +138,9 @@ body {
 
 #textline { 
 	float: left;
-	width: 860px;
+	width: 805px;
 	background: white;
-	margin-left: 90px;
+	margin-left: 150px;
 	margin-top: 40px;
 	margin-bottom: 20px;
 	padding:7px;
@@ -133,9 +159,9 @@ body {
 
 #register {
 	float: left;
-	width: 400px;
+	width: 370px;
 	background: white;
-	margin-left: 90px;
+	margin-left: 150px;
 	padding:15px;
 }
 
@@ -157,9 +183,9 @@ body {
 
 #login {
 	float: left;
-	width: 400px;
+	width: 370px;
 	background: white;
-	margin-left: 15px;
+	margin-left: 19px;
 	padding:15px;
 }
 
@@ -168,7 +194,7 @@ body {
 	
 }
 
-button.submitForm {
+button {
 	background:black;
 	color:white;
 	padding:10px;
@@ -178,28 +204,494 @@ button.submitForm {
 #footer {
 	background: black;
 	height:130px;
+    clear: both;
+    position: relative;
+    margin-top: -3em;
+
 }
 
-.container-1 input#search{
-  position: absolute;
-  top: 12%;
-  left: 15%;
-  background: #FFF;
-  border: none;
-  font-size: 10pt;
-  color: #63717f;
-  padding-left: 45px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+#box {
+	z-index:1;
+	position: absolute;
+	width:250px;
+	left:450px;
+	top: 160px;
+	background: white;
+	padding:15px;
+	-webkit-box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.75);
 }
 
-.container-1 .icon{
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  margin-left: 17px;
-  margin-top: 17px;
-  z-index: 1;
-  color: #4f5b66;
+
+#box span {
+	float:left;
+	color: grey;
+	font-size:16px;
+}
+
+#box input {
+	padding:3px;
+	margin-top:10px;
+}
+
+#box div {
+	clear:both;
+}
+
+#box button {
+	width:100%;
+	margin-top: 10px;
+}
+
+/* 
+_-_-_-_-_-_-_-_-_-_
+	CHECKOUT
+_-_-_-_-_-_-_-_-_-_
+*/
+
+#checkout {
+	height: 530px;
+	background: #EDEDED;
+	font-size: 12px;
+}
+
+#checkout2 {
+	height: 600px;
+	background: #EDEDED;
+	font-size: 12px;
+}
+
+#checkout3 {
+	height: 540px;
+	background: #EDEDED;
+	font-size: 12px;
+}
+
+#formFields {
+	float:left;
+	width: 600px;
+	margin-left: 150px;
+	margin-top: 40px;
+}
+
+#aside {
+	float:left;
+	width: 190px;	
+	margin-top: 40px;
+	padding-left: 30px;
+}
+
+#textlineCheckout {
+	background: white;
+	padding:7px;	
+}
+
+#textlineCheckout h2 {
+	display: inline;
+	font-weight: normal;
+}
+
+#BillingInfo {
+	background: #757474;
+	padding:10px;
+	color:white;
+	font-weight: bold;
+}
+
+#BillingInfo a {
+	color: white;
+}
+
+.BorderBox {
+	padding:10px;
+	border: 1px solid #757474;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.RedLine{
+  width: 590px;
+  background-color: red;
+  color: #fff;
+  height: 18px;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 10px;
+
+}
+.RedLine span{
+  background-image: url(../images/circle-active.png); 
+  float: left;
+  padding-left: 5px;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 18px;
+  padding-top: 1px;
+  color:black;
+}
+
+.GreyLine {
+  width: 590px;
+  background-color: #3C3A3A;
+  color: white;
+  height: 18px;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 10px;
+
+}
+.GreyLine span{
+  background-image: url(../images/circle.png); 
+  float: left;
+  padding-left: 5px;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 18px;
+  padding-top: 1px;
+  color:white;
+}
+
+#UserDeatilsForm input {
+	margin-bottom:10px;
+	height:20px;
+	padding:2px;
+}
+
+#UserDeatilsForm label {
+	font-weight: bold;
+}
+.Address {
+	width:420px;
+}
+
+#UserDeatilsForm a {
+float:right;
+}
+
+tr,td {
+	width:100%;
+	border:1px solid black;
+	padding:10px;
+}
+
+/* 
+_-_-_-_-_-_-_-_-_-_
+	CATEGORY
+_-_-_-_-_-_-_-_-_-_
+*/
+
+#cats {
+	height: 100%;
+	background: #EDEDED;
+	font-size: 12px;
+}
+
+#LeftMenu {
+	float:left;
+	width: 200px;
+	margin-left: 150px;
+}
+
+#CatList a span {
+	text-decoration: none;
+	color:white;
+	font-size: 18px;
+	display:block;
+	background: red;
+	margin-top:1px;
+}
+
+.whiteLine {
+	display: block;
+	background:white;
+	font-size:18px;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+#Albums {
+	float:left;
+	width: 605px;
+	margin-left: 15px;
+}
+
+#Album {
+	width:195px;
+	float:left;
+	margin-right:6.6px;
+	margin-top:20px;
+}
+
+#Album img {
+	height:180px;
+	width:190px;
+}
+
+#AlbumInfo {
+	background: black;
+	color:white;
+	padding-bottom:10px;
+}
+
+#AlbumInfo h3 {
+	font-size: 18px;
+
+}
+
+#AlbumInfo span {
+	color: grey;
+}
+
+#price {
+	color: red;
+	font-size: 22px;
+	padding-left:10px;
+	font-weight: bold;
+}
+
+#AlbumInfo a {
+	color: white;
+	text-decoration: none;
+	padding-left:10px;
+}
+
+#title {
+	font-weight: bold;
+	color: white;
+	font-size: 18px;
+	margin-left: 10px;
+}
+
+#title span {
+	display: block;
+	font-size:12px;
+	margin-top:3px;
+}
+
+#AlbumInfo #icons {
+		float:right;
+		transform: scale(2,2);
+		margin-right: 15px;
+}
+
+#AlbumInfo #icons i {
+	letter-spacing: 5px;
+}
+
+/* 
+_-_-_-_-_-_-_-_-_-_
+	PRODUCT
+_-_-_-_-_-_-_-_-_-_
+*/
+
+#Product {
+	float:left;
+	width: 605px;
+	margin-left: 15px;
+}
+
+#Product .BigImg {
+	float:left;
+	margin-right:20px;
+	margin-left:10px;
+	width:190px;
+}
+
+#Product .SmallImg {
+	float: left;
+	height: 60px;
+	width: 60px;
+	margin-right:5px;
+}
+
+#Product h3 {
+	display: inline;
+	font-size:19px;
+	color: grey;
+	font-weight: bold;
+}
+
+.bold {
+		font-weight: bold;
+}
+
+.green {
+	color:green;
+	font-weight: bold;
+}
+
+#Product p {
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+#AddBox {
+	float: right;
+	width:385px;
+	background: white;
+	border: 1px solid grey;
+	padding:3px;
+	margin-bottom: 13px;
+}
+
+#Details {
+	clear:both;
+	background: white;
+	padding:8px;
+	width:97%;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+#AddBox input {
+	padding:10px;
+	width: 10px;
+	margin-left: 6px;
+}
+
+.plusMinus {
+	background: white;
+	color: grey;
+	border: 1px solid;
+	height: 0.4px;
+	width: 0.4px;
+}
+
+/* 
+_-_-_-_-_-_-_-_-_-_
+	HOMEPAGE
+_-_-_-_-_-_-_-_-_-_
+*/
+
+#homepage {
+	height: 100%;
+	background: #EDEDED;
+	font-size: 12px;
+}
+
+#TopAlbums {
+	width:100%;
+}
+
+#TAlbum {
+	position: relative; 
+	float:left;
+	width:380px;  
+	height:330px;
+}
+
+#TAlbum img {
+	width:380px;
+	height:330px;
+}
+
+#TAlbumInfo {
+	position: absolute; 
+	top: 270px; 
+	left: 0; 
+	background: black;
+	opacity: 0.7;
+	width:100%;
+	height:60px;
+	color:red;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#TAlbumInfo span {
+	color:white;
+	font-size:25px;
+	font-weight: bold;
+}
+
+#TSAlbum {
+	position:relative;
+	float:left;
+	width:180px;
+	height:165px;
+}
+
+#TSAlbum img {
+	width:180px;
+	height:165px;
+}
+
+#TSAlbumInfo {
+	position: absolute; 
+	top: 125px;  
+	background: black;
+	opacity: 0.7;
+	width:100%;
+	height:40px;
+	color:red;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#TSAlbumInfo span {
+	color:white;
+	font-size:18px;
+	font-weight: bold;
+}
+
+#SideAlbum {
+	background: red;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.AName {
+	color: white;
+	font-size:18px;
+	padding-left: 6px;
+	padding-bottom: 6px;
+	padding-right: 6px;
+}
+
+.Adesc {
+	color: black;
+	padding-left: 6px;
+	padding-bottom: 6px;
+	padding-right: 6px;
+}
+
+#SideAlbum img {
+	width: 200px;
+}
+
+#MainAlbum {
+	background:red;
+	clear: both;
+	float:left;
+	width:599px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height:160px;
+	color: white;
+}
+
+#MainAlbum img {
+	width:290px;
+	height:160px;
+	float:left;
+}
+#MainAlbumInfo {
+	background: red;
+	position: absolute; 
+	left:700px;
+	width:190px;
+	padding:10px;
+	line-height: 2;
+}
+
+#MainAlbumInfo span {
+	font-size:26px;
+	font-weight: strong;
 }

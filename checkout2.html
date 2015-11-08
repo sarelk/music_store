@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Checkout</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body> 
+	<div id="wrapper">
+		<header>
+			<div id="toolbar">
+				<ul>
+					<li>Home</li>
+					<li>My Account</li>
+					<li>My Whishlist</li>
+					<li>Checkout</li>
+					<li>Log in</li>
+				</ul>
+			</div>	
+			<div id="logo">
+				<img src="images/logo.png">
+					<div class="container-1">
+					  <span class="icon"><i class="fa fa-search"></i></span>
+					  <input type="search" id="search" placeholder="Search" />
+					</div>
+				<div id="welcomeText">Welcome to our<br> online store!</div>
+				<div id="cart" class="fa fa-shopping-cart"></div>
+				<div id="cartNum">2</div>
+			</div>
+		</header>
+	<div style="clear:both;"></div>
+		<div id="checkout2">	
+			<div id="formFields">
+				<div id="textlineCheckout">
+					<h2>Checkout</h2>
+				</div>
+				<br><br>
+				<a href="checkout.html"><div class="GreyLine"><span>1</span>&nbsp;&nbsp;Billing Information</div></a>
+				<div class="RedLine"><span>2</span>&nbsp;&nbsp;Payment Information</div>
+				<div id="UserDeatilsForm" class="BorderBox">
+						<input type="radio" name="payMethod" id="first" value="first">
+						<label for="first">Check / Money order</label><br>
+
+						<input type="radio" name="payMethod" id="other" value="other">
+						<label for="other">Credit Card (saved)</label>
+
+
+							<p><label  class="label" for="Name on Card" class="active">Name on Card <span class="redtitle">*</span></label></p>
+							<input type="text" required placeholder="Alex Turner">
+
+							<p><label  class="label" for="Credit Card Type">Credit Card Type <span class="redtitle">*</span></label></p>
+							<input type="text" name="team" list="team_list" ng-model="form.cardtype" required>
+							<datalist id="team_list">
+								<option value="Visa">Visa</option>
+								<option value="Master Card">Master Card</option>
+							</datalist>
+
+							<p><label  class="label" for="Credit Card Number">Credit Card Number <span class="redtitle">*</span></label></p>
+							<input type="text" required/>
+
+							<p><label  class="label" for="Expiration date">Expiration Date <span class="redtitle">*</span></label></p>
+							<input name="mounth" list="mounth_list" ng-model="form.cardmounth" required>
+							<datalist id="mounth_list">
+								<option>01 (JAN)</option>
+								<option>02 (FEB)</option>
+								<option>03 (MAR)</option>
+								<option>04 (ARP)</option>
+								<option>05 (MAY)</option>
+								<option>06 (JUN)</option>
+								<option>07 (JUL)</option>
+								<option>08 (AUG)</option>
+								<option>09 (SEPT)</option>
+								<option>10 (OCT)</option>
+								<option>11 (NOV)</option>
+								<option>12 (DEC)</option>
+							</datalist>
+							<input name="year" list="year_list" required>
+							<datalist id="year_list">
+								<option value="2016"></option>
+								<option value="2017"></option>
+								<option value="2018"></option>
+								<option value="2019"></option>
+								<option value="2020"></option>
+								<option value="2021"></option>
+								<option value="2022"></option>
+								<option value="2023"></option>
+								<option value="2024"></option>
+								<option value="2025"></option>
+							</datalist>
+
+					<p><label  class="label" for="Verification">Card Verification Number<span class="redtitle">*</span></label></p>
+					<input type="text" required/>
+				<a href="checkout3.html"><button>Continue</button></a>
+				<div style="clear:both;"></div><span class="redtitle">* Required Fields</span>
+				</div>	
+			<a href="checkout3.html"><div class="GreyLine"><span>3</span>&nbsp;&nbsp;Order Review</div></a>
+			</div>
+		
+			<div id="aside">
+				<div id="textlineCheckout">
+					<h2>Your Checkout Progress</h2>
+				</div>
+				<br><br>
+				<div id="BillingInfo">Billing Information | <a href="">Change</a></div>
+				<div id="UserDetails" class="BorderBox">
+				Alex Turner <BR>
+				London Price 432  <BR>
+				Sheffield, 35660  <BR>
+				T:05200000
+				</div>
+				<div id="BillingInfo">Payment Method | <a href="">Change</a></div>
+				<div id="PaymentDetails" class="BorderBox">
+				Credit card (saved) <BR>
+				Credit card type <BR>
+				Visa  <BR>
+				Credit Card Number  <BR>
+				xxxx-841  <BR>
+				Name On Card <BR>
+				Alex Turner <BR>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+		</div>		
+	</div>
+	<script src="js/angular-1.0.7.min.js"></script>
+</body>
+</html>

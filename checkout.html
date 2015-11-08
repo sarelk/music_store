@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Checkout</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body> 
+	<div id="wrapper">
+		<header>
+			<div id="toolbar">
+				<ul>
+					<li>Home</li>
+					<li>My Account</li>
+					<li>My Whishlist</li>
+					<li>Checkout</li>
+					<li>Log in</li>
+				</ul>
+			</div>	
+			<div id="logo">
+				<img src="images/logo.png">
+					<div class="container-1">
+					  <span class="icon"><i class="fa fa-search"></i></span>
+					  <input type="search" id="search" placeholder="Search" />
+					</div>
+				<div id="welcomeText">Welcome to our<br> online store!</div>
+				<div id="cart" class="fa fa-shopping-cart"></div>
+				<div id="cartNum">2</div>
+			</div>
+		</header>
+	<div style="clear:both;"></div>
+		<div id="checkout">	
+
+
+			<div id="formFields">
+				<div id="textlineCheckout">
+					<h2>Checkout</h2>
+				</div>
+				<br><br>
+				<div class="RedLine"><span>1</span>&nbsp;&nbsp;Billing Information</div>
+				<div id="UserDeatilsForm" class="BorderBox">
+
+					<label for="Adress">Adress<span class="redtitle">*</span></label><br>
+						<input type="text" id="Adress" class="Address" placeholder="London str 345" required >
+					<br>
+					<label for="City">City <span class="redtitle">*</span></label><br>
+						<br><input id="city" type="text" placeholder="Shefield" required >
+				<br>
+					<label for="ZipCode">Zip/Posyal Code<span class="redtitle">*</span></label><br>
+						<br><input id="ZipCode" type="text" placeholder="90210" required >
+					<br>
+					<label for="PhoneNumber">Telephone<span class="redtitle">*</span></label><br>
+						<input id="PhoneNumber" type="text" placeholder="05200000" required >
+					<br>
+					<a href="checkout2.html"><button>Continue</button></a>
+				<div style="clear:both;"></div><span class="redtitle">* Required Fields</span>
+				</div>	
+			<a href="checkout2.html"><div class="GreyLine"><span>2</span>&nbsp;&nbsp;Payment Information</div></a>
+			<a href="checkout3.html"><div class="GreyLine"><span>3</span>&nbsp;&nbsp;Order Review</div></a>
+			
+			</div>
+		
+			<div id="aside">
+				<div id="textlineCheckout">
+					<h2>Your Checkout Progress</h2>
+				</div>
+				<br><br>
+				<div id="BillingInfo">Billing Information | <a href="">Change</a></div>
+				<div id="UserDetails" class="BorderBox">
+				Alex Turner <BR>
+				London Price 432  <BR>
+				Sheffield, 35660  <BR>
+				T:05200000
+				</div>
+				<div id="BillingInfo">Payment Method</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+		</div>		
+	</div>
+	<script src="js/angular-1.0.7.min.js"></script>
+</body>
+</html>

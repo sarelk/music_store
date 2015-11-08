@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="musicStore">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
@@ -19,7 +19,7 @@
 				</ul>
 			</div>	
 			<div id="logo">
-				<h1>Music</h1>
+				<img src="images/logo.png">
 					<div class="container-1">
 					  <span class="icon"><i class="fa fa-search"></i></span>
 					  <input type="search" id="search" placeholder="Search" />
@@ -30,19 +30,35 @@
 			</div>
 		</header>
 	
-		<div id="content">
+		<div id="content" ng-app="Login" ng-controller="Ctrl">
 			<div id="textline">
 				<h2>Login or create an account</h2>
 			</div>
 			
 			<div style="clear:both;"></div>
+			<div id="box" ng-show="myVar">
+				<span style="margin-left:90px;">Registration</span>
+					<span style="float:right">X</span>
+				<div>
+					<b>Profile informations</b>
+					<input type="text" name="firstname" placeholder="First Name">
+					<input type="text" name="lastname" placeholder="Last Name">
+					<br><br>
+					<p><b>Login Datas</b></p>
+					<input type="text" name="email" placeholder="E-mail address">
+					<input type="password" name="password" placeholder="Password">
+					<input type="password" name="passwordr" placeholder="Password confirmation">
+					
+					<button>Register</button>
+				</div>
+			</div>
 			
 			<div id="register">
 			<div id="userPlus" class="fa fa-user-plus"></div>
 			<span class="redtitle">NEW CUSTOMERS</span>
 			<hr><br>
 			By creating an account with our store, you will be able to move rhtough the checkout proccess faster, store multyple shipping addresses, view and track your ordered in your account and more.
-			<br><br> <button class="submitForm">Create an Account</button>
+			<br><br> <button class="submitForm" ng-click="toggle()">Create an Account</button>
 			</div>
 			
 			<div id="login">
@@ -50,19 +66,27 @@
 			<span class="redtitle">REGISTERED CUSTOMERS</span>
 			<hr><br>
 			If you have an account, Please sign in. <br>
-			<strong>Email Address</strong><span class="redtitle">*</span> <br>
+			<b>Email Address</b><span class="redtitle">*</span> <br>
 			<input type="text" size="35"><br>
 			<b>Password</b><span class="redtitle">*</span> <br>
 			<input type="text" size="35"><br>
 			<span class="redtitle" style="float:right;">* Required Fields</span>
 			<button class="submitForm">Login</button>
-			
-			
 			</div>
 		</div>
 		
 		<div id="footer">
 		</div>		
 	</div>
+	<script src="js/angular-1.0.7.min.js"></script>
+	<script>
+	var app = angular.module('Login', []);
+	app.controller('Ctrl', function($scope) {
+		$scope.myVar = false;
+		$scope.toggle = function() {
+			$scope.myVar = !$scope.myVar;
+		};
+	});
+	</script>
 </body>
 </html>
